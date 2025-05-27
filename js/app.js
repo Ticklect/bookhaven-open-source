@@ -395,5 +395,8 @@ class ReadingResourcesApp {
 
 // Initialize the app when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-    const app = new ReadingResourcesApp();
+    console.log('DOM fully loaded, initializing app...');
+    // Make app globally available
+    window.app = new ReadingResourcesApp();
+    console.log('App initialized successfully');
 });

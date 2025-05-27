@@ -130,5 +130,20 @@
     <script src="js/audiobooks.js" onerror="console.error('Failed to load audiobooks.js')"></script>
     <script src="js/books-comics-academic.js" onerror="console.error('Failed to load books-comics-academic.js')"></script>
     <script src="js/app.js" onerror="console.error('Failed to load app.js')"></script>
+    <script>
+        // Test if the app initialized properly
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('=== App Initialization Test ===');
+            console.log('Window.app exists:', typeof window.app !== 'undefined');
+            console.log('getAllAudiobookResources exists:', typeof getAllAudiobookResources === 'function');
+            console.log('getAllBookComicsAcademicResources exists:', typeof getAllBookComicsAcademicResources === 'function');
+            
+            // Check if resources are loaded
+            if (window.app) {
+                console.log('Resources loaded:', window.app.resources && window.app.resources.length > 0);
+                console.log('Categories initialized:', document.getElementById('categoryList').children.length > 0);
+            }
+        });
+    </script>
 </body>
 </html>
