@@ -1,0 +1,20 @@
+{
+  "name": "bookhaven",
+  "version": "1.0.0",
+  "description": "BookHaven - Your ultimate digital library with curated reading resources",
+  "keywords": ["books", "reading", "library", "ebooks", "audiobooks", "resources"],
+  "author": "BookHaven Team",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
